@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/** */
 * main - Prints "Programing is like building a multilingual puzzle"
 *
 * Return: Always 0 (Success)
