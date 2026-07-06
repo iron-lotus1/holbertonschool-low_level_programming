@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 int main(void) 
 {
     printf("Size of char: %zu byte(s)\n", sizeof(char));
@@ -9,5 +9,5 @@ int main(void)
     printf("Size of double: %zu byte(s)\n", sizeof(double));
     printf("Size of long double: %zu byte(s)\n", sizeof(long double));
     printf("Size of pointer: %zu byte(s)\n", sizeof(void*));
-    return 0;
+    return (0);
 }
