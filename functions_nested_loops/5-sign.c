@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * main - Entry point
- *
+ * print_sign - prints the char and num
+ * @n: is the char used as int
  * Return: 1 or else 0 otherwise -1
  */
 int print_sign(int n)
