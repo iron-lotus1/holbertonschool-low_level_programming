@@ -1,4 +1,3 @@
-#include "_putchar.c"
 #include "main.h"
 /**
  * main - Entry point
@@ -8,13 +7,15 @@
 
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
+char str[] = "_putchar";
+int i = 0;
+int count = sizeof(str) / sizeof(str[0]);
+
+while (i < count - 1)
+{
+_putchar(str[i]);
+i++;
+}
+_putchar('\n');
 return (0);
 }
