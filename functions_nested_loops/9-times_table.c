@@ -4,7 +4,7 @@
  *
  * Return: void
  */
-void times_table(void);
+void times_table(void)
 {
 int row, col, product;
 for (row = 0; row <= 9; row++)
