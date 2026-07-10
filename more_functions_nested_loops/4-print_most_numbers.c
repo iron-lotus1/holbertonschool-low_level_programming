@@ -1,6 +1,13 @@
-#include
+#include "main.h"
 /**
-* main - Entry point
+* print_most_numbers - does not print 2 and 4 
 *
-* Return: Always (0) (Success)
+* Return: 
 */
+void print_most_numbers(void)
+{
+
+_putchar();
+_putchar('\n');
+return ();
+}

@@ -1,6 +1,12 @@
-#include
+#include "main.h"
 /**
-* main - Entry point
+* print_square - Entry point
 *
-* Return: Always (0) (Success)
+* Return: 
 */
+void print_square(int size)
+{
+//size = to the size of the square
+//size is <= 0 ; function should print newline
+    _putchar('\n');
+}
