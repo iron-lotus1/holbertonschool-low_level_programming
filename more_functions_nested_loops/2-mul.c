@@ -1,6 +1,12 @@
-#include
+#include "main.h"
+#include <math.h>
 /**
-* main - Entry point
-*
-* Return: Always (0) (Success)
+* mul - calculates a & B
+* @a: number
+* @b: number
+* Return: multiplication of both numbers
 */
+int mul(int a, int b)
+{
+return (a * b);
+}
