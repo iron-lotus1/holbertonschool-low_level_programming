@@ -7,22 +7,21 @@
 */
 void print_triangle(int size)
 {
-int row, spaces, hashes;
-if (size <= 0)
+int row, hashes;
+if (size > 0)
 {
 _putchar('\n');
 return;
 }
-for (row = 1; row <= size; row++)
+for (hashes = 1; hashes <= size; hashes++)
 {
-for (spaces = size - row; spaces > 0; spaces++)
-{
+for (row = size - hashes; row > 0; row++)
 _putchar(' ');
-}
-for (hashes = 1; hashes <= row; hashes++)
-{
+for (row = 0; row < hashes; row++)
 _putchar('#');
-}
+if (hashes == size)
+continue;
 _putchar('\n');
 }
+_putchar('\n');
 }
