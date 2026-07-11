@@ -1,15 +1,29 @@
 #include "main.h"
+#include <unistd.h>
 /**
-* main - Entry point
-*
-* Return: Always (0) (Success)
+* print_triangle - Prints triangle, followed by newline
+* @size: Size of triangle
+* Return
 */
 void print_triangle(int size)
 {
-
-/**size is 0 or less the function should print a new line
-to print the char using '#' 
-
-*/
-    _putchar('\n');
+int row;
+int spaces;
+int hashes;
+if (size <= 0)
+{
+_putchar('\n');
+return;
+}
+for (row = 1; row <= size; row++)
+{
+for (spaces = size - row; spaces > 0; spaces++)
+{
+_putchar(' ');
+}
+{
+_putchar('#');
+}
+_putchar('\n');
+}
 }
