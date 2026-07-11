@@ -13,7 +13,7 @@ int col;
 _putchar('\n');
 return;
 }
-for (col = 0; row < size; row++)
+for (row = 0; row < size; row++)
 {
 for (col = 0; col < size; col++)
 {
