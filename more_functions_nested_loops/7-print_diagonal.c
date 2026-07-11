@@ -1,14 +1,24 @@
 #include "main.h"
 /**
 * print_diagonal - Entry point
-*
+* @n: is the number of times the character \ should be printed
 * Return:
 */
 void print_diagonal(int n)
 {
-/**n is the num of times the character \ should be printed // ascii for \ is 92
-    n <= 0 function should print a newline\n
-    */
-
+int i, j;
+if (n <= 0)
+{
 _putchar('\n');
+return;
+}
+for (i = 0; i < n; i++)
+{
+for (j = 0; j < i; j++)
+{
+_putchar(' ');
+}
+_putchar('\\');
+_putchar('\n');
+}
 }
