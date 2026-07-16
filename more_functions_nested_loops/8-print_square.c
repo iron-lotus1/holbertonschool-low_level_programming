@@ -9,15 +9,12 @@ void print_square(int size)
 {
 int row;
 int col;
+char symbol = '#';
+for (int i = 0; i < size; i++)
 {
-_putchar('\n');
-return;
-}
-for (row = 0; row < size; row++)
+for (int j = 0; j < size; j++)
 {
-for (col = 0; col < size; col++)
-{
-_putchar('#');
+_putchar("%c", symbol);
 }
 _putchar('\n');
 }
