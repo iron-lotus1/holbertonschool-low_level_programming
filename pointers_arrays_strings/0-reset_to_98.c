@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (or void if the function returns nothing).
  */
-int reset_to_98(int *n)
+void reset_to_98(int *n)
 {
 *n = 98;
 }
