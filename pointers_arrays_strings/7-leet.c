@@ -1,34 +1,25 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes everey word of a string
+ * leet - capitalizes everey word of a string
  * @s: string to modify
  *
  * Return: the resulting string
  */
-char *cap_string(char *s)
+char *leet(char *s)
 {
-	int i, j;
-
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		'!', '?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-			s[i] -= 32;
-
-		for (j = 0; j < 13; j++)
-		{
-			if (s[i] == spe[j])
-			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-				{
-					s[i + 1] -= 32;
-				}
-			}
-		}
-	}
-
-	return (s);
+int i, j;
+char letters[] = "aAeEoOtTlL";
+char numbers[] = "4433007711";
+for (i = 0; str[i] != '\0'; i++)
+{
+for (j = 0; letters[j] != '\0'; j++)
+{
+if (str[i] == letters[j])
+{
+str[i] = numbers[j];
+}
+}
+}
+return (s);
 }
