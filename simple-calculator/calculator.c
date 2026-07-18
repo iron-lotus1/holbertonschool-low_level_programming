@@ -51,12 +51,13 @@ while (option[0][0] == '4')
 printf("Divide\n");
 float num1 = 0.0;
 float num2 = 0.0;
+
 printf("A: ");
-scanf("%2f", &num1); /* %f can be changed to %lf for double */
+scanf("%1f", &num1); /* %f can be changed to %lf for double */
 printf("B: ");
-scanf("%2f", &num2);
+scanf("%1f", &num2);
 float value = (num1 / num2);
-printf("Result: %.2f\n", value); /* I changed it to a .2f as it was giving a null value for num2*/
+printf("Result: %.1f\n", value); /* I changed it to a .1f as it was giving a null value or continuing loop*/
 }
 while (option[0][0] == '0')
 {
