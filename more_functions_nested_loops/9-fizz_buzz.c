@@ -1,18 +1,35 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
 * main - Entry point
 *
 * Return: Always (0) (Success)
 */
-int fizz_buzz(void)
+int main(void)
 {
-
-    /**each num should be seperrated by a space
-    program that prints 1 to 100 with a newline\n
-    multilpe of 3, print Fizz
-    multiple of 5 print Buzz
-    multiples of both 3 && five; print FizzBuzz
-*/
-
+	for (int i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			_putchar("FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			_putchar("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			_putchar("Buzz");
+		}
+		else
+		{
+			_putchar("%d", i);
+		}
+		if (i < 100)
+		{
+			_putchar(" ");
+		}
+	}
+	_putchar("\n");
+	return (0);
 }
