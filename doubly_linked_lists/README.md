@@ -11,7 +11,7 @@ This continues until it reaches the end, which will be **NULL** and returns **co
 
 ## [1-dlistint](./1-dlistint_len.c)
 
-> This function calculates the number of nodes in a doubly linked list. The pointer to the head node, in this example being <b>h</b>, and starts with **count = 0**. <br>
+This function calculates the number of nodes in a doubly linked list. The pointer to the head node, in this example being <b>h</b>, and starts with **count = 0**. <br>
 The function then enters a loop that continues while <b>h</b> is not **NULL**, meaning there is a valid node to inspect.<br>
 count is used to loop once for each node whilst using <b> h =->next;</b> This allows the pointer to travel to until it reaches the end where it is **NULL**<br>
 **count** is used for return as this is the total number of nodes in the list.
